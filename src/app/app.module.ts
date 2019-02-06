@@ -8,6 +8,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { FooterComponent } from './footer/footer.component';
+import { HowItWorksComponent } from './how-it-works/how-it-works.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { FindjobComponent } from './findjob/findjob.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     LoginComponent,
     SignupComponent,
-    FooterComponent
+    FooterComponent,
+    HowItWorksComponent,
+    DashboardComponent,
+    FindjobComponent
   ],
   imports: [
     routes,

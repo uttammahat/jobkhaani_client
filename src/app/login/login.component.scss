@@ -105,31 +105,6 @@ textarea:-ms-input-placeholder {
   color: $input-placeholder-color;
 }
 
-.header-svg-bg {
-  @include position-absolute(0, 0, 0, 0);
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.header-svg-bg svg {
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-  @include transform(translate(2%, -8%));
-  animation: header-svg-bg 1s ease 1 forwards;
-}
-
-@keyframes header-svg-bg {
-  0% {
-    @include transform(translate(2%, -8%));
-  }
-
-  100% {
-    @include transform(translate(0%, 0%));
-  }
-}
-
 .login-page {
   // background: $default-secondary-color;
   // background: linear-gradient(130deg, $dark-accent-color 0%, $text-dark 50%, $dark-accent-color 100%);
@@ -248,9 +223,9 @@ textarea:-ms-input-placeholder {
   background: linear-gradient(130deg, $light-primary-color 0%, $primary-color 100%);
 }
 
-form input:invalid:not(:placeholder-shown)+.focus-input-field::before {
-  width: 100%;
-}
+// form input:invalid:not(:placeholder-shown)+.focus-input-field::before {
+//   width: 100%;
+// }
 
 .input-field:focus+.focus-input-field::before {
   width: 100%;
@@ -270,34 +245,34 @@ form input:invalid:not(:placeholder-shown)+.focus-input-field::before {
   left: 0;
   padding-left: 5px;
   text-transform: capitalize;
-  -webkit-transform: translateY(14px);
-  transform: translateY(14px);
+  -webkit-transform: translateY(-15px);
+  transform: translateY(-15px);
   transition: all .4s ease;
   opacity: 1;
 }
 
-form input:not(:placeholder-shown)+.focus-input-field::after {
-  -webkit-transform: translateY(-15px);
-  transform: translateY(-15px);
-  opacity: 1;
-}
+// form input:not(:placeholder-shown)+.focus-input-field::after {
+//   -webkit-transform: translateY(-15px);
+//   transform: translateY(-15px);
+//   opacity: 1;
+// }
 
-form input:invalid:not(:placeholder-shown)+.focus-input-field::after {
-  -webkit-transform: translateY(-15px);
-  transform: translateY(-15px);
-  opacity: 1;
-}
+// form input:invalid:not(:placeholder-shown)+.focus-input-field::after {
+//   -webkit-transform: translateY(-15px);
+//   transform: translateY(-15px);
+//   opacity: 1;
+// }
 
-form input:valid:not(:placeholder-shown)+.focus-input-field::after {
-  -webkit-transform: translateY(-15px);
-  transform: translateY(-15px);
-  opacity: 1;
-}
+// form input:valid:not(:placeholder-shown)+.focus-input-field::after {
+//   -webkit-transform: translateY(-15px);
+//   transform: translateY(-15px);
+//   opacity: 1;
+// }
 
 .input-field:focus+.focus-input-field::after {
-  -webkit-transform: translateY(-15px);
-  transform: translateY(-15px);
-  opacity: 1;
+  // -webkit-transform: translateY(-15px);
+  // transform: translateY(-15px);
+  // opacity: 1;
   color: $text-primary;
 }
 
@@ -307,18 +282,26 @@ form input:valid:not(:placeholder-shown)+.focus-input-field::after {
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 13px;
+  margin: 0 auto;
 }
 
 .wrap-login-form-btn {
   width: 100%;
   display: block;
   position: relative;
-  border-radius: 25px;
+  border-radius: 8px;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
   z-index: 1;
+  @include box-shadow(0px 4px 6px -2px rgba(0, 0, 0, 0.4));
+  @include transition();
+}
+
+.wrap-login-form-btn:hover {
+  @include transform(scale(1.05));
+  @include box-shadow(0 3px 8px -4px rgba(0, 0, 0, 0.2));
 }
 
 .login-form-bgbtn {
@@ -343,7 +326,7 @@ form input:valid:not(:placeholder-shown)+.focus-input-field::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  padding: 12px 24px;
   width: 100%;
   height: 50px;
   transition: all 0.4s ease;
