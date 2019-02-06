@@ -1,0 +1,104 @@
+<section class="signup-page">
+
+  <app-navbar></app-navbar>
+
+  <div class="header-svg-bg">
+    <svg>
+      <defs>
+        <linearGradient id="a" x1="0.316" y1="0.301" x2="0.758" y2="0.655" gradientUnits="objectBoundingBox">
+          <stop offset="0" stop-color="#11b2e8" />
+          <stop offset="1" stop-color="#429bd6" />
+        </linearGradient>
+      </defs>
+      <g>
+        <path d="M9336.787,628.342s-203.633-185.956-331.307-188.5-188.5,25.7-259.906-137.093S8567.688,141,8521.688,130s-318-82-327-289-215.228-240.549-291-238-357.678-11.422-349.109-234.2,1862.178-34.273,1862.178-34.273L9485.3,439.84Z"
+          transform="translate(-7531 389)" fill="#f2eefd" />
+        <path d="M9336.787,628.342s-203.633-185.956-331.307-188.5-188.5,25.7-259.906-137.093S8567.688,141,8521.688,130s-318-82-327-289-215.228-240.549-291-238-357.678-11.422-349.109-234.2,1862.178-34.273,1862.178-34.273L9485.3,439.84Z"
+          transform="translate(-7531 329)" fill="url(#a)" />
+      </g>
+    </svg>
+  </div>
+
+  <div class="signupwrapper">
+    <div class="limiter">
+      <div class="container-signup">
+        <div class="wrap-signup">
+          <form class="signup-form validate-form">
+            <span class="signup-form-title m-b-20">
+              <span class="header"> signup with </span>
+
+              <!-- <div class="signup-logo-wrapper">
+                <img src="../../assets/img/jobkhaani_logo.png" alt="jobkhaani_logo" class="logo">
+              </div> -->
+
+            </span>
+            <div class="signup-form-social m-b-30">
+              <a href="#" class="signup-form-social-item">
+                <i class="fa fa-facebook-f" aria-hidden="true"></i>
+              </a>
+
+              <a href="#" class="signup-form-social-item">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="text-center m-b-40">
+              <p>
+                or
+              </p>
+            </div>
+
+            <div class="wrap-input-field dropdown">
+              <div class="select-input mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                <label class="mdl-textfield_label floating-label" for="list3">signup as</label>
+                <select class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="category" id="packageType">
+                  <option disabled="" value="0: null">Freelancer or Employer?</option>
+                  <option value="2">Freelancer</option>
+                  <option value="3">Employer</option>
+                </select>
+              </div>
+            </div>
+            <div class="wrap-input-field">
+              <input autocomplete="off" class="input-field" formcontrolname="freelancerFullName" required="required"
+                type="text">
+              <span class="focus-input-field" data-placeholder="freelancer Full Name"></span>
+            </div>
+            <div class="wrap-input-field">
+              <input autocomplete="off" class="input-field" formcontrolname="phoneNumber" required="required" type="number"
+                minlength="10">
+              <span class="focus-input-field" data-placeholder="Phone Number"></span>
+            </div>
+            <div class="wrap-input-field">
+              <input autocomplete="off" class="input-field" formcontrolname="email" required="required" type="email">
+              <span class="focus-input-field" data-placeholder="Email"></span>
+            </div>
+            <div class="wrap-input-field">
+              <input class="input-field" formcontrolname="password" placeholder="Password" required="required" type="password">
+              <span class="focus-input-field" data-placeholder="Password"></span>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input id="myCheck" required="required" type="checkbox"> Agree to <a class="terms" routerlink="/terms"
+                  target="_blank" href="#/terms">terms and conditions</a> of Jobkhaani </label>
+            </div>
+            <div class="container-signup-form-btn">
+              <div class="wrap-signup-form-btn">
+                <div class="signup-form-bgbtn"></div>
+                <button class="signup-form-btn"> sign up </button>
+              </div>
+            </div>
+          </form>
+          <div class="signup-text">
+            have an account? <a [routerLink]="['/login']" routerLinkActive="router-link-active">Log in</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer start -->
+
+  <app-footer></app-footer>
+
+  <!-- footer closed -->
+</section>

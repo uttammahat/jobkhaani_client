@@ -1,0 +1,442 @@
+@import '../../scss/styles.scss';
+
+
+button {
+  outline: none !important;
+  border: none;
+  background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.form-control {
+  height: 4rem;
+  font-size: 1.4rem;
+  border: 0;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus,
+input:focus {
+  border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+
+textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+input::-webkit-input-placeholder {
+  color: $input-placeholder-color;
+}
+
+input:-moz-placeholder {
+  color: $input-placeholder-color;
+}
+
+input::-moz-placeholder {
+  color: $input-placeholder-color;
+}
+
+input:-ms-input-placeholder {
+  color: $input-placeholder-color;
+}
+
+textarea::-webkit-input-placeholder {
+  color: $input-placeholder-color;
+}
+
+textarea:-moz-placeholder {
+  color: $input-placeholder-color;
+}
+
+textarea::-moz-placeholder {
+  color: $input-placeholder-color;
+}
+
+textarea:-ms-input-placeholder {
+  color: $input-placeholder-color;
+}
+
+.header-svg-bg {
+  @include position-absolute(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.header-svg-bg svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  @include transform(translate(2%, -8%));
+  animation: header-svg-bg 1s ease 1 forwards;
+}
+
+@keyframes header-svg-bg {
+  0% {
+    @include transform(translate(2%, -8%));
+  }
+
+  100% {
+    @include transform(translate(0%, 0%));
+  }
+}
+
+.signup-page {
+  // background: $default-secondary-color;
+  // background: linear-gradient(130deg, $dark-accent-color 0%, $text-dark 50%, $dark-accent-color 100%);
+  overflow: hidden;
+}
+
+.signupwrapper {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin-bottom: 20px;
+  // background-color: #e8ebe9;
+  z-index: 99;
+  overflow-y: auto;
+  overflow-y: unset;
+}
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-signup {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: 0 0;
+}
+
+.wrap-signup {
+  width: 390px;
+  background: $white-color;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 77px 55px 33px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
+}
+
+.signup-form {
+  width: 100%;
+}
+
+.signup-form-title {
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+// .header {
+//   font-size: 1.6rem;
+//   color: #1b213a;
+//   font-weight: 600;
+// }
+
+.signup-logo-wrapper {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
+}
+
+.signup-logo-wrapper img.logo {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap-input-field {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin-bottom: 37px;
+}
+
+.input-field {
+  font-size: 1.4rem;
+  color: #555;
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  height: 45px;
+  background: 0 0;
+  padding: 0 5px;
+}
+
+
+.focus-input-field {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.focus-input-field::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: all .4s ease;
+  background: $primary-color;
+  background: linear-gradient(130deg, $light-primary-color 0%, $primary-color 100%);
+}
+
+form input:invalid:not(:placeholder-shown)+.focus-input-field::before {
+  width: 100%;
+}
+
+.input-field:focus+.focus-input-field::before {
+  width: 100%;
+}
+
+.focus-input-field::after {
+  font-size: 1.4rem;
+  color: #999;
+  line-height: 1.2;
+  content: attr(data-placeholder);
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  padding-left: 5px;
+  text-transform: capitalize;
+  -webkit-transform: translateY(14px);
+  transform: translateY(14px);
+  transition: all .4s ease;
+  opacity: 1;
+}
+
+form input:invalid:not(:placeholder-shown)+.focus-input-field::after {
+  -webkit-transform: translateY(-15px);
+  transform: translateY(-15px);
+  opacity: 1;
+}
+
+form input:not(:placeholder-shown)+.focus-input-field::after {
+  -webkit-transform: translateY(-15px);
+  transform: translateY(-15px);
+  opacity: 1;
+}
+
+form input:valid:not(:placeholder-shown)+.focus-input-field::after {
+  -webkit-transform: translateY(-15px);
+  transform: translateY(-15px);
+  opacity: 1;
+}
+
+.input-field:focus+.focus-input-field::after {
+  -webkit-transform: translateY(-15px);
+  transform: translateY(-15px);
+  opacity: 1;
+  color: $text-primary;
+}
+
+
+.container-signup-form-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 13px;
+}
+
+.wrap-signup-form-btn {
+  width: 100%;
+  display: block;
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.signup-form-bgbtn {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: -100%;
+  z-index: -1;
+  width: 300%;
+  height: 100%;
+  @include primary-gradient-bg;
+  transition: all 0.4s ease;
+}
+
+.signup-form-btn {
+  position: relative;
+  font-size: 1.4rem;
+  color: $white-color;
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  transition: all 0.4s ease;
+}
+
+
+.signup-form-btn:focus,
+.wrap-signup-form-btn:hover .signup-form-btn {
+  color: $text-dark;
+}
+
+.wrap-signup-form-btn:focus .signup-form-bgbtn,
+.wrap-signup-form-btn:hover .signup-form-bgbtn {
+  left: 0;
+}
+
+.signup-text {
+  font-size: 1.4rem;
+  color: $default-color;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.signup-text a {
+  font-size: 1.4rem;
+  color: $text-primary;
+}
+
+.signup-text a:hover {
+  color: $text-secondary;
+}
+
+.signup-form-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.signup-form-social .signup-form-social-item {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  color: $white-color;
+  @include display-flex;
+  @include flex-direction-row;
+  @include justify-content-center;
+  @include align-items-center;
+  @include align-content-center;
+  @include flex-wrap(wrap);
+  background: transparent;
+  @include transition();
+  @include box-shadow(0 8px 24px -4px rgba(44, 35, 35, 0.4));
+}
+
+.signup-form-social .signup-form-social-item:nth-child(1) {
+  background: #3b5999;
+}
+
+.signup-form-social .signup-form-social-item:nth-child(2) {
+  background: #dd4b39;
+}
+
+.signup-form-social .signup-form-social-item:hover {
+  background: $white-color;
+  @include transform(scale(1.06));
+  @include box-shadow(0 8px 24px -4px rgba(0, 0, 0, 0.2));
+}
+
+.signup-form-social .signup-form-social-item:nth-child(1):hover {
+  color: #3b5999;
+}
+
+.signup-form-social .signup-form-social-item:nth-child(2):hover {
+  color: #dd4b39;
+}
+
+label.mdl-textfield_label.floating-label {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  color: $default-secondary-color;
+  font-size: 1.4rem;
+}
+
+.wrap-input-field.dropdown {
+  margin-bottom: 50px;
+}
+
+.checkbox {
+  margin-bottom: 20px;
+}

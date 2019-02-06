@@ -1,0 +1,82 @@
+<section class="login-page">
+
+  <app-navbar></app-navbar>
+
+  <div class="header-svg-bg">
+    <svg>
+      <defs>
+        <linearGradient id="a" x1="0.316" y1="0.301" x2="0.758" y2="0.655" gradientUnits="objectBoundingBox">
+          <stop offset="0" stop-color="#11b2e8" />
+          <stop offset="1" stop-color="#429bd6" />
+        </linearGradient>
+      </defs>
+      <g>
+        <path d="M9336.787,628.342s-203.633-185.956-331.307-188.5-188.5,25.7-259.906-137.093S8567.688,141,8521.688,130s-318-82-327-289-215.228-240.549-291-238-357.678-11.422-349.109-234.2,1862.178-34.273,1862.178-34.273L9485.3,439.84Z"
+          transform="translate(-7531 389)" fill="#f2eefd" />
+        <path d="M9336.787,628.342s-203.633-185.956-331.307-188.5-188.5,25.7-259.906-137.093S8567.688,141,8521.688,130s-318-82-327-289-215.228-240.549-291-238-357.678-11.422-349.109-234.2,1862.178-34.273,1862.178-34.273L9485.3,439.84Z"
+          transform="translate(-7531 329)" fill="url(#a)" />
+      </g>
+    </svg>
+  </div>
+
+  <div class="loginwrapper">
+    <div class="limiter">
+      <div class="container-login">
+        <div class="wrap-login">
+          <form class="login-form validate-form">
+            <span class="login-form-title m-b-20">
+              <span class="header"> Login with </span>
+
+              <!-- <div class="login-logo-wrapper">
+                <img src="../../assets/img/jobkhaani_logo.png" alt="jobkhaani_logo" class="logo">
+              </div> -->
+
+            </span>
+            <div class="login-form-social m-b-30">
+              <a href="#" class="login-form-social-item">
+                <i class="fa fa-facebook-f" aria-hidden="true"></i>
+              </a>
+
+              <a href="#" class="login-form-social-item">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="text-center m-b-40">
+              <p>
+                or
+              </p>
+            </div>
+            <div class="wrap-input-field">
+              <input autocomplete="off" class="input-field" formcontrolname="Email/Phone Number" required="required"
+                type="text">
+              <span class="focus-input-field" data-placeholder="Email / Phone Number">
+
+              </span>
+            </div>
+            <div class="wrap-input-field">
+              <input class="input-field" formcontrolname="password" placeholder="Password" required="required" type="password">
+              <span class="focus-input-field" data-placeholder="Password">
+              </span>
+            </div>
+            <div class="container-login-form-btn">
+              <div class="wrap-login-form-btn">
+                <div class="login-form-bgbtn"></div>
+                <button class="login-form-btn"> Log in </button>
+              </div>
+            </div>
+          </form>
+          <div class="signup-text">
+            Don't have an account? <a [routerLink]="['/signup']" routerLinkActive="router-link-active">Sign Up</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer start -->
+
+  <app-footer></app-footer>
+
+  <!-- footer closed -->
+</section>

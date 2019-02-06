@@ -1,0 +1,249 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'mixin';
+
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+
+
+
+.hidden {
+  display: none !important;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --input-padding-x: .75rem;
+  --input-padding-y: .75rem;
+}
+
+html,
+body {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', 'Montserrat', sans-serif;
+  line-height: 1.7;
+  color: $default-color;
+  // background: $light-shade-color;
+  box-sizing: border-box;
+}
+
+.text-primary {
+  color: $text-primary !important;
+}
+
+.text-dark {
+  color: $text-dark !important;
+}
+
+.text-light-secondary {
+  color: $text-light-secondary !important;
+}
+
+.text-dark-secondary {
+  color: $text-dark-secondary !important;
+}
+
+// .text-primary,
+// .text-info,
+// .text-warning,
+// .text-danger,
+// .text-success,
+// .text-highlight1,
+// .text-highlight2,
+// .text-light,
+// .text-dark {
+//     @include transition(color, 1s);
+// }
+
+// .fill-primary {
+//     background: $fill-primary !important;
+// }
+
+// .fill-light {
+//     background: $fill-light !important;
+// }
+
+// .fill-dark {
+//     background: $fill-dark !important;
+// }
+
+// .fill-dark-secondary {
+//     background: $fill-dark-secondary !important;
+// }
+
+// .fill-highlight1 {
+//     background: $fill-highlight1 !important;
+// }
+
+// .fill-highlight2 {
+//     background: $fill-highlight2 !important;
+// }
+
+// .fill-dark,
+// .fill-light,
+// .fill-primary,
+// .fill-highlight1,
+// .fill-highlight2,
+// .fill-light-secondary,
+// .fill-dark-secondary {
+//     @include transition(background, 1s);
+// }
+
+.bg-purple {
+  background: #8E44AD;
+  color: $white-color;
+}
+
+.bg-orange {
+  background: #E67D21;
+  color: $white-color;
+}
+
+.bg-success {
+  background-color: #28a745 !important;
+  color: $white-color;
+}
+
+.bg-danger {
+  color: $white-color;
+}
+
+.bg-blue {
+  background: #3598dc;
+  color: $white-color;
+}
+
+.p-b-20 {
+  padding-bottom: 20px;
+}
+
+.p-b-48 {
+  padding-bottom: 48px;
+}
+
+.p-b-26 {
+  padding-bottom: 26px;
+}
+
+.p-t-10 {
+  padding-top: 10px;
+}
+
+.p-t-20 {
+  padding-top: 20px !important;
+}
+
+.p-l-20 {
+  padding-left: 20px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: $default-color;
+  margin: 0px;
+  @include transition;
+}
+
+a:focus {
+  outline: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $light-primary-color;
+}
+
+button {
+  outline: none !important;
+  border: none;
+  background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.form-control {
+  height: 4rem;
+  font-size: 1.4rem;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+.m-t-10 {
+  margin-top: 10px;
+}
+
+.m-t-20 {
+  margin-top: 20px;
+}
+
+.m-t-30 {
+  margin-top: 30px;
+}
+
+.m-t-40 {
+  margin-top: 40px;
+}
+
+.m-b-10 {
+  margin-bottom: 10px;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+.m-b-30 {
+  margin-bottom: 30px;
+}
+
+.m-b-40 {
+  margin-bottom: 40px;
+}
+
+.text-muted {
+  color: #656565 !important;
+}
+
+.fa {
+  font-size: 1.4rem;
+}

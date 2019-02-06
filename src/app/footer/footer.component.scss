@@ -1,0 +1,136 @@
+@import '../../scss/mixin';
+
+/* footer start */
+
+.footer-wrapper {
+  position: relative;
+  padding: 200px 0 0;
+  margin-top: 100px;
+  // background: $primary-color;
+  // background: linear-gradient(130deg, $light-primary-color 0%, $primary-color 100%);
+}
+
+.footer-wrapper .container {
+  background: $primary-color;
+}
+
+.footer-wrapper .logo {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-wrapper .logo .footer-logo {
+  max-height: 60px;
+  // height: 60px;
+  // width: 100%;
+}
+
+.social-link-wrapper {
+  @include display-flex;
+  @include flex-direction-row;
+  @include justify-content-flex-start;
+  @include flex-wrap(wrap);
+  @include align-items-center;
+}
+
+.social-item a {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  @include display-flex;
+  @include flex-direction-row;
+  @include justify-content-center;
+  @include align-items-center;
+  background: transparent;
+  @include transition();
+  @include box-shadow(0 8px 24px -4px rgba(44, 35, 35, 0.4));
+}
+
+.social-item a:hover {
+  background: $white-color;
+  @include transform(scale(1.06));
+  @include box-shadow(0 8px 24px -4px rgba(0, 0, 0, 0.2));
+}
+
+.social-item i {
+  font-size: 1.6rem;
+  color: $white-color;
+  @include transition();
+}
+
+.social-item a:hover i {
+  color: $text-dark;
+}
+
+.footer-item-wrapper {
+  width: 100%;
+  height: 90%;
+  border-left: 2px solid $border-color;
+  padding: 0 20px;
+  text-transform: capitalize;
+  margin: 20px 0;
+  // /* letter-spacing: 1px; */
+}
+
+// .footer-wrapper .col-md-9 .row .col-md-3:last-child .footer-item-wrapper {
+//   border-right: 2px solid #adadad;
+// }
+
+.footer-title {
+  font-size: 1.6rem;
+  color: $white-color;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  @include display-flex;
+  @include flex-direction-column;
+}
+
+.footer-links a {
+  font-size: 1.4rem;
+  color: $white-color;
+  margin-bottom: 5px;
+}
+
+.footer-links a:hover {
+  color: $text-dark;
+}
+
+.footer-copyright-wrapper {
+  margin: 20px 0 40px;
+  text-align: center;
+  color: $white-color;
+  letter-spacing: 1px;
+}
+
+.footer-copyright-wrapper p {
+  font-size: 1.4rem;
+}
+
+.footer-copyright-wrapper p a {
+  color: $white-color;
+  font-size: 1.4rem;
+}
+
+.footer-copyright-wrapper p a:hover {
+  color: $text-dark;
+}
+
+.footer-wrapper-bg {
+  @include position-absolute(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.footer-wrapper-bg svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+/* footer closed */
