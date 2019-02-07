@@ -1,0 +1,54 @@
+@import '../../scss/mixin';
+
+section.dashboard-page {
+  overflow: hidden;
+}
+
+.dashboard {
+  padding: 80px 0;
+}
+
+.profile-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.profile-img-wrapper {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  margin: 0px auto;
+  width: 130px;
+  padding: 3px;
+  border: 3px solid rgb(210, 214, 222);
+  border-radius: 50% 50% 50% 50%;
+}
+
+.profile-location {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.profile-location i {
+  margin-right: 5px;
+}
+
+.profile-location p {
+  font-size: 1.4rem;
+}
+
+.profile-btn .container-btn {
+  @include justify-content-center;
+}
+
+.profile-btn .container-btn .btn-wrapper {
+  margin: 0;
+}
