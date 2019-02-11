@@ -93,6 +93,12 @@
   justify-content: flex-start;
 }
 
+@mixin justify-content-flex-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
 @mixin align-content-center {
   -ms-flex-line-pack: center;
   align-content: center;

@@ -185,7 +185,8 @@ textarea:-ms-input-placeholder {
   width: 100%;
   position: relative;
   border-bottom: 2px solid #adadad;
-  margin-bottom: 37px;
+  margin-bottom: 15px;
+  // margin-bottom: 37px;
 }
 
 .input-field {
@@ -233,25 +234,25 @@ textarea:-ms-input-placeholder {
   width: 100%;
 }
 
-.focus-input-field::after {
-  font-size: 1.4rem;
-  color: #999;
-  line-height: 1.2;
-  content: attr(data-placeholder);
-  display: block;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  right: auto;
-  bottom: auto;
-  left: 0;
-  padding-left: 5px;
-  text-transform: capitalize;
-  -webkit-transform: translateY(-15px);
-  transform: translateY(-15px);
-  transition: all .4s ease;
-  opacity: 1;
-}
+// .focus-input-field::after {
+//   font-size: 1.4rem;
+//   color: #999;
+//   line-height: 1.2;
+//   content: attr(data-placeholder);
+//   display: block;
+//   width: 100%;
+//   position: absolute;
+//   top: 0;
+//   right: auto;
+//   bottom: auto;
+//   left: 0;
+//   padding-left: 5px;
+//   text-transform: capitalize;
+//   -webkit-transform: translateY(-15px);
+//   transform: translateY(-15px);
+//   transition: all .4s ease;
+//   opacity: 1;
+// }
 
 // form input:invalid:not(:placeholder-shown)+.focus-input-field::after {
 //   -webkit-transform: translateY(-15px);
@@ -291,7 +292,7 @@ textarea:-ms-input-placeholder {
   width: 100%;
   display: block;
   position: relative;
-  border-radius: 8px;
+  border-radius: 4px;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
@@ -337,7 +338,7 @@ textarea:-ms-input-placeholder {
 
 .signup-form-btn:focus,
 .wrap-signup-form-btn:hover .signup-form-btn {
-  color: $text-dark;
+  // color: $text-dark;
 }
 
 .wrap-signup-form-btn:focus .signup-form-bgbtn,
@@ -419,7 +420,7 @@ label.mdl-textfield_label.floating-label {
 }
 
 .wrap-input-field.dropdown {
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
 }
 
 .checkbox {

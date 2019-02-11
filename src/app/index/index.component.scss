@@ -1,5 +1,19 @@
   @import '../../scss/mixin';
 
+  .intro-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 210px;
+    left: -270px;
+    width: 725px;
+    height: 651px;
+    background-image: url('../../assets/svg/base.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+  }
+
   .homepage {
     overflow: hidden;
   }
@@ -79,7 +93,7 @@
     @include position-absolute-top-left();
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 0;
   }
 
   .header-svg-bg svg {
@@ -275,22 +289,33 @@
     padding: 80px 0;
   }
 
+  .about-us::before {
+    @include position-absolute-top-left(50%, 50%);
+    content: '';
+    width: 420px;
+    height: 370px;
+    transform: translate(-50%, -30%);
+    background: url(../../assets/svg/base2.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
   .blurb {
     font-size: 1.4rem;
     margin-top: 30px;
     margin-bottom: 30px;
   }
 
-  .about-us-bg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-  }
+  // .about-us-bg {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   z-index: -1;
+  //   width: 100%;
+  //   height: 100%;
+  // }
 
   /* about us section closed */
 
@@ -299,6 +324,19 @@
   .freelancing-portal {
     position: relative;
     padding: 80px 0;
+  }
+
+  .freelancing-portal::before {
+    @include pseudo;
+    position: absolute;
+    top: 0;
+    right: -140px;
+    content: '';
+    width: 420px;
+    height: 370px;
+    background: url('../../assets/svg/base3.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 
   .freelancing-portal .section-heading h1 {
@@ -317,13 +355,13 @@
     margin-bottom: 20px;
   }
 
-  .portal-bg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    height: 100%;
-  }
+  // .portal-bg {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   z-index: -1;
+  //   height: 100%;
+  // }
 
   /* freelancing portal closed */
 
@@ -348,7 +386,7 @@
     background-color: transparent;
     border: 0;
     border-bottom: 2px solid transparent;
-    opacity: 0.4;
+    opacity: 0.6;
   }
 
   .how-works .nav-tabs .nav-link-primary {
@@ -408,24 +446,191 @@
     color: $text-secondary;
   }
 
-  .how-works-bg {
-    @include position-absolute(0, 0, 0, 0);
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+  // .how-works-bg {
+  //   @include position-absolute(0, 0, 0, 0);
+  //   width: 100%;
+  //   height: 100%;
+  //   z-index: -1;
+  // }
+
+  // .dash-arrow-bg {
+  //   @include position-absolute(0, 0, 0, 0);
+  //   width: 100%;
+  //   height: 100%;
+  //   z-index: -1;
+  // }
+
+
+  .how-works::before {
+    @include position-absolute-top-left(50%, 50%);
+    content: '';
+    width: 970px;
+    height: 390px;
+    transform: translate(-50%, -20%);
+    background: url('../../assets/svg/dash-arrow.svg') no-repeat, url(../../assets/svg/base4.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 
-  .dash-arrow-bg {
-    @include position-absolute(0, 0, 0, 0);
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+  .tab-pane.active .col-md-3 .item-wrapper {
+    animation: panelIn 0.4s ease both;
+  }
+
+  .tab-pane.active .col-md-3:nth-child(2) .item-wrapper {
+    animation-delay: 0.1s;
+  }
+
+  .tab-pane.active .col-md-3:nth-child(3) .item-wrapper {
+    animation-delay: 0.2s;
+  }
+
+  .tab-pane.active .col-md-3:nth-child(4) .item-wrapper {
+    animation-delay: 0.4s;
+  }
+
+  @keyframes panelIn {
+    0% {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
 
   /* how it works closed */
 
 
+  /* mine jobs popup modal start*/
+
+  .modal-header button {
+    opacity: 1;
+  }
+
+  .modal-header button:hover {
+    cursor: not-allowed;
+    transform: scale(1.3);
+  }
+
+  .modal-header button span {
+    color: white;
+    opacity: 1;
+    font-size: 2rem;
+  }
+
+  button.close {
+    opacity: 1;
+  }
+
+  .modal-header {
+    border: 0;
+  }
+
+  .modal-header .modal-title {
+    font-size: 2rem;
+    color: white;
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 20px;
+    background: $white-color;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 15px 40px 0px rgba(237, 237, 237, 0.4);
+  }
+
+  .modal-content {
+    background: transparent;
+    border: 0;
+  }
+
+  .content h4 a {
+    font-size: 2rem;
+    color: #161e2b;
+    font-weight: 700;
+  }
+
+  .content .project-description {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .content .info {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .content .info span {
+    margin-right: 15px;
+  }
+
+  .content .info span a i {
+    margin-right: 8px;
+  }
+
+  .modal-body .more .prices {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .modal-body .more .prices a {
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+
+  .modal-body .more .deadline {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: 300;
+    display: block;
+    text-align: right;
+  }
+
+  .modal-body .btn-wrapper {
+    width: 100%;
+  }
+
+  @media (max-width: 768.98px) {
+    .intro-wrapper::before {
+      top: 450px;
+      left: -500px;
+    }
+
+    .modal-body {
+      flex-direction: column;
+    }
+
+    .modal-body .content {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-bottom: 20px;
+    }
+
+    .modal-body .more .prices {
+      flex-direction: row;
+    }
+
+    .modal-body .more .deadline {
+      text-align: left;
+    }
+
+    .modal-body .btn-wrapper {
+      width: 100%;
+    }
+  }
+
+
+  /* mine jobs popup modal closed */
   // .blurb h1{
   //   margin-bottom: 10px;
   // }

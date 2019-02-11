@@ -42,27 +42,341 @@
         </div>
       </div> -->
 
-      <div class="row">
-        <div class="col-md-3">
-          <div class="profile-wrapper">
-            <div class="profile-img-wrapper">
-              <img src="../../assets/img/profile.jpg" alt="profile image" class="profile-img">
+      <div class="row m-b-20">
+        <div class="welcome-wrapper">
+          <div class="col-md-6">
+            <div class="welcome-title">
+              <h1>
+                welcome to jobkhaani.
+              </h1>
             </div>
-            <div class="profile-location">
-              <i class="location fa fa-map-marker"></i>
-              <p>Suryabinayak, bhaktapur</p>
-            </div>
-            <div class="profile-btn">
+          </div>
+          <div class="col-md-6">
+            <div class="welcome-btn-wrapper">
               <div class="container-btn">
                 <div class="btn-wrapper btn-grd-primary">
                   <div class="btn-primary-bg"></div>
-                  <a routerLink="/findjob" class="btn btn-grd navbar-btn"> find a job</a>
+                  <a routerLink="#" class="btn btn-grd navbar-btn"> Continue as individual</a>
+                </div>
+
+                <div class="btn-wrapper btn-grd-secondary">
+                  <div class="btn-secondary-bg"></div>
+                  <a routerLink="/signup" class="btn btn-grd navbar-btn"> continue as company</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-9">
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-12">
+          <div class="row">
+            <div class="profile-wrapper">
+              <div class="profile-img-wrapper">
+                <img src="../../assets/img/profile.jpg" alt="profile image" class="profile-img">
+              </div>
+              <div class="profile-title">
+                <h2>
+                  <a href="#">full name</a>
+                </h2>
+              </div>
+              <div class="profile-location">
+                <i class="location fa fa-map-marker"></i>
+                <p>Suryabinayak, bhaktapur</p>
+              </div>
+              <div class="profile-btn">
+                <div class="container-btn">
+                  <div class="btn-wrapper btn-grd-primary">
+                    <div class="btn-primary-bg"></div>
+                    <a routerLink="/postjob" class="btn btn-grd navbar-btn"> post a job</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-12">
+
+          <!-- <div class="row">
+            <div class="card card-box projects-progress m-b-20 full-width">
+              <div class="card-header">
+                <h1>
+                  <i aria-hidden="true" class="fa fa-spinner"></i>
+                  <span>in progress projects</span>
+                </h1>
+              </div>
+              <div class="card-body">
+                <span>You have no ongoing projects.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="card card-box projects-progress m-b-20 full-width">
+              <div class="card-header">
+                <h1>
+                  <i aria-hidden="true" class="fa fa-spinner"></i>
+                  <span>in progress projects</span>
+                </h1>
+              </div>
+              <div class="card-body">
+                <span>You have no ongoing projects.</span>
+              </div>
+            </div>
+          </div> -->
+
+
+
+
+          <!-- tab section -->
+
+          <div class="row">
+            <div class="features-tabs section">
+              <div class="container">
+                <div class="features-tabs-inner section-inner has-top-divider">
+                  <div class="tabs-container">
+                    <ul class="nav nav-tabs tabs-links" id="myTab" role="tablist">
+                      <li class="tab-item">
+                        <a class="tab-link active" id="one-tab" data-toggle="tab" href="#one" role="tab" aria-controls="One"
+                          aria-selected="true">
+                          <i aria-hidden="true" class="fa fa-spinner"></i>
+                          <span>in progress projects</span>
+                        </a>
+                      </li>
+                      <li class="tab-item">
+                        <a class="tab-link" id="two-tab" data-toggle="tab" href="#two" role="tab" aria-controls="Two"
+                          aria-selected="false">
+                          <i _ngcontent-c4="" aria-hidden="true" class="fa fa-thumbs-up"></i>
+                          <span>approved projects</span>
+                        </a>
+                      </li>
+                      <li class="tab-item">
+                        <a class="tab-link" id="three-tab" data-toggle="tab" href="#three" role="tab" aria-controls="Three"
+                          aria-selected="false">
+                          <i _ngcontent-c4="" aria-hidden="true" class="fa fa-cogs"></i>
+                          <span>review pending</span>
+                        </a>
+                      </li>
+                      <li class="tab-item">
+                        <a class="tab-link" id="four-tab" data-toggle="tab" href="#four" role="tab" aria-controls="Four"
+                          aria-selected="false">
+                          <i _ngcontent-c4="" aria-hidden="true" class="fa fa-frown-o"></i>
+                          <span> Admin Verification Fail</span>
+                        </a>
+                      </li>
+                      <li class="tab-item">
+                        <a class="tab-link" id="five-tab" data-toggle="tab" href="#five" role="tab" aria-controls="Five"
+                          aria-selected="false">
+                          <i class="fa fa-check" aria-hidden="true"></i>
+                          <span> completed projects</span>
+                        </a>
+                      </li>
+                      <li class="tab-item">
+                        <a class="tab-link" id="six-tab" data-toggle="tab" href="#six" role="tab" aria-controls="Six"
+                          aria-selected="false">
+                          <i aria-hidden="true" class="fa fa-floppy-o"></i>
+                          <span> Drafted projects</span>
+                        </a>
+                      </li>
+                      <li class="tab-item">
+                        <a class="tab-link" id="seven-tab" data-toggle="tab" href="#seven" role="tab" aria-controls="Seven"
+                          aria-selected="false">
+                          <i aria-hidden="true" class="fa fa-low-vision"></i>
+                          <span> expired projects</span>
+                        </a>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-panel show active p-3" id="one" role="tabpanel" aria-labelledby="one-tab">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>Project Name</th>
+                            <th>Bid Amount</th>
+                            <th>Bid Delivery</th>
+                            <th>Response Information</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr tabindex="0">
+                            <td> Build a game</td>
+                            <td> Rs. 45000</td>
+                            <td> 90</td>
+                            <td><a href="https://www.jobkhaani.com/#/responses/verified/7">Response</a></td>
+                            <td tabindex="0"><i aria-hidden="true" class="fa fa-eye fa-lg"></i></td>
+                          </tr>
+                          <tr tabindex="0">
+                            <td> Build a game</td>
+                            <td> Rs. 45000</td>
+                            <td> 90</td>
+                            <td><a href="https://www.jobkhaani.com/#/responses/verified/7">Response</a></td>
+                            <td tabindex="0"><i aria-hidden="true" class="fa fa-eye fa-lg"></i></td>
+                          </tr>
+                          <tr tabindex="0">
+                            <td> Build a game</td>
+                            <td> Rs. 45000</td>
+                            <td> 90</td>
+                            <td><a href="https://www.jobkhaani.com/#/responses/verified/7">Response</a></td>
+                            <td tabindex="0"><i aria-hidden="true" class="fa fa-eye fa-lg"></i></td>
+                          </tr>
+                          <tr tabindex="0">
+                            <td> Build a game</td>
+                            <td> Rs. 45000</td>
+                            <td> 90</td>
+                            <td><a href="https://www.jobkhaani.com/#/responses/verified/7">Response</a></td>
+                            <td tabindex="0"><i aria-hidden="true" class="fa fa-eye fa-lg"></i></td>
+                          </tr>
+                          <tr tabindex="0">
+                            <td> Build a game</td>
+                            <td> Rs. 45000</td>
+                            <td> 90</td>
+                            <td><a href="https://www.jobkhaani.com/#/responses/verified/7">Response</a></td>
+                            <td tabindex="0"><i aria-hidden="true" class="fa fa-eye fa-lg"></i></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="tab-panel p-3" id="two" role="tabpanel" aria-labelledby="two-tab">
+                      <div class="profile-btn">
+                        <div class="container-btn">
+                          <div class="btn-wrapper btn-grd-primary">
+                            <div class="btn-primary-bg"></div>
+                            <a routerLink="/postjob" class="btn btn-grd navbar-btn">start posting</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-panel p-3" id="three" role="tabpanel" aria-labelledby="three-tab">
+                      <span>You have no projects in review pending.</span>
+                    </div>
+
+                    <div class="tab-panel p-3" id="four" role="tabpanel" aria-labelledby="four-tab">
+                      <span>You have no missed projects.</span>
+                    </div>
+
+                    <div class="tab-panel p-3" id="five" role="tabpanel" aria-labelledby="five-tab">
+                      <span>You have no projects completed.</span>
+                    </div>
+
+                    <div class="tab-panel p-3" id="six" role="tabpanel" aria-labelledby="six-tab">
+                      <span>You haven't saved any projects.</span>
+                    </div>
+
+                    <div class="tab-panel p-3" id="seven" role="tabpanel" aria-labelledby="seven-tab">
+                      <span>You have no expired projects.</span>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- tab section -->
+
+
+          <!-- <div class="row">
+            <div class="features-tabs section">
+              <div class="container">
+                <div class="features-tabs-inner section-inner has-top-divider">
+                  <div class="tabs-container">
+                    <ul class="nav nav-tabs tabs-links" id="myTab" role="tablist">
+                      <li class="tab-item">
+                        <a class="tab-link active" id="one-tab" data-toggle="tab" href="#one" role="tab" aria-controls="One"
+                          aria-selected="true">
+                          <i aria-hidden="true" class="fa fa-gavel"></i>
+                          <span>for my-bids</span>
+                        </a>
+                      </li>
+                      <li class="tab-item">
+                        <a class="tab-link" id="two-tab" data-toggle="tab" href="#two" role="tab" aria-controls="Two"
+                          aria-selected="false">
+                          <i aria-hidden="true" class="fa fa-cogs"></i>
+                          <span>for bids-progress</span>
+                        </a>
+                      </li>
+                      <li class="tab-item">
+                        <a class="tab-link" id="three-tab" data-toggle="tab" href="#three" role="tab" aria-controls="Three"
+                          aria-selected="false">
+                          <i aria-hidden="true" class="fa fa-frown-o"></i>
+                          <span>for missed-bids</span>
+                        </a>
+                      </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-panel show active p-3" id="one" role="tabpanel" aria-labelledby="one-tab">
+                        <div class="bid table-responsive">
+                          <table class="table table-hover ">
+                            <thead>
+                              <tr>
+                                <th>Project Name</th>
+                                <th>Bid Amount</th>
+                                <th>Bid Delivery</th>
+                                <th>Response Information</th>
+                                <th>action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr tabindex="0">
+                                <td> Build a game</td>
+                                <td> Rs. 45000</td>
+                                <td> 90</td>
+                                <td><a href="https://www.jobkhaani.com/#/responses/verified/7">Response</a></td>
+                                <td tabindex="0"><i aria-hidden="true" class="fa fa-eye fa-lg"></i></td>
+                              </tr>
+                              <tr tabindex="0">
+                                <td> Build a game</td>
+                                <td> Rs. 45000</td>
+                                <td> 90</td>
+                                <td><a href="https://www.jobkhaani.com/#/responses/verified/7">Response</a></td>
+                                <td tabindex="0"><i aria-hidden="true" class="fa fa-eye fa-lg"></i></td>
+                              </tr>
+                              <tr tabindex="0">
+                                <td> Build a game</td>
+                                <td> Rs. 45000</td>
+                                <td> 90</td>
+                                <td><a href="https://www.jobkhaani.com/#/responses/verified/7">Response</a></td>
+                                <td tabindex="0"><i aria-hidden="true" class="fa fa-eye fa-lg"></i></td>
+                              </tr>
+                              <tr tabindex="0">
+                                <td> Build a game</td>
+                                <td> Rs. 45000</td>
+                                <td> 90</td>
+                                <td><a href="https://www.jobkhaani.com/#/responses/verified/7">Response</a></td>
+                                <td tabindex="0"><i aria-hidden="true" class="fa fa-eye fa-lg"></i></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="tab-panel p-3" id="two" role="tabpanel" aria-labelledby="two-tab">
+                        <h5 class="card-title">Tab Card Two</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                          the
+                          card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                      <div class="tab-panel p-3" id="three" role="tabpanel" aria-labelledby="three-tab">
+                        <h5 class="card-title">Tab Card Three</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                          the
+                          card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
 
         </div>
       </div>

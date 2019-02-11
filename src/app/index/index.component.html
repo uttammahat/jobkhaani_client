@@ -25,7 +25,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-lg-12">
-            <div class="row">
+            <div class="row m-b-40">
               <div class="col-md-5 col-lg-5">
                 <div class="header-wrapper">
                   <h1>
@@ -532,7 +532,7 @@
                 </div>
               </div>
             </div>
-            <a class="scrolldown-btn-wrapper" href="#">
+            <a class="scrolldown-btn-wrapper" href="#" ng-click="gotoAnchor(minejobs)">
               <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
               <div class="scroll-down-dude">scroll down</div>
             </a>
@@ -546,7 +546,7 @@
 
   <!-- mine job section start -->
 
-  <section class="mine-job">
+  <section class="mine-job" id="minejobs">
     <div class="container">
       <div class="row">
         <div class="section-heading-subtitle">
@@ -557,13 +557,152 @@
         <div class="col-md-12">
           <div class="section-heading">
             <h1>Mine jobs under following categories</h1>
+            <!-- Button trigger modal -->
+            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+              Launch demo modal
+            </button> -->
+
           </div>
         </div>
         <div class="col-md-12 m-b-40">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-12">
+              <!-- mine jobs Modal start -->
+              <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">IT solution</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <div class="content">
+                        <h4>
+                          <a href="#">Restaurant Team Member - Crew </a>
+                        </h4>
+                        <div class="project-description">
+                          <p>
+                            TestProject simplifies and enhances the use of leading open source tools Selenium &
+                            Appium. It is driven by a community of passionate developers that create and share addons
+                            for Mobile, Web and API testing.
+                          </p>
+                        </div>
+                        <div class="info">
+                          <span class="company">
+                            <a href="#">
+                              <i aria-hidden="true" class="fa fa-th"></i>IT Solution
+                            </a>
+                          </span>
+                          <span class="job-type">
+                            <a href="#">
+                              <i aria-hidden="true" class="fa fa-clock-o"></i>Less than 1 month
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="more col-lg-3 col-md-12">
+                        <div class="prices">
+                          <a href="#" class="price">Rs. 40000</a>
+                        </div>
+                        <p class="deadline">Deadline: Oct 31, 2018</p>
+
+                        <div class="btn-wrapper btn-grd-primary">
+                          <div class="btn-primary-bg"></div>
+                          <a routerLink="#" class="btn btn-grd navbar-btn"> Apply Now</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-body">
+                      <div class="content">
+                        <h4>
+                          <a href="#">Restaurant Team Member - Crew </a>
+                        </h4>
+                        <div class="project-description">
+                          <p>
+                            TestProject simplifies and enhances the use of leading open source tools Selenium &
+                            Appium. It is driven by a community of passionate developers that create and share addons
+                            for Mobile, Web and API testing.
+                          </p>
+                        </div>
+                        <div class="info">
+                          <span class="company">
+                            <a href="#">
+                              <i aria-hidden="true" class="fa fa-th"></i>IT Solution
+                            </a>
+                          </span>
+                          <span class="job-type">
+                            <a href="#">
+                              <i aria-hidden="true" class="fa fa-clock-o"></i>Less than 1 month
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="more col-lg-3 col-md-12">
+                        <div class="prices">
+                          <a href="#" class="price">Rs. 40000</a>
+                        </div>
+                        <p class="deadline">Deadline: Oct 31, 2018</p>
+
+                        <div class="btn-wrapper btn-grd-primary">
+                          <div class="btn-primary-bg"></div>
+                          <a routerLink="#" class="btn btn-grd navbar-btn"> Apply Now</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-body">
+                      <div class="content">
+                        <h4>
+                          <a href="#">Restaurant Team Member - Crew </a>
+                        </h4>
+                        <div class="project-description">
+                          <p>
+                            TestProject simplifies and enhances the use of leading open source tools Selenium &
+                            Appium. It is driven by a community of passionate developers that create and share addons
+                            for Mobile, Web and API testing.
+                          </p>
+                        </div>
+                        <div class="info">
+                          <span class="company">
+                            <a href="#">
+                              <i aria-hidden="true" class="fa fa-th"></i>IT Solution
+                            </a>
+                          </span>
+                          <span class="job-type">
+                            <a href="#">
+                              <i aria-hidden="true" class="fa fa-clock-o"></i>Less than 1 month
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="more col-lg-3 col-md-12">
+                        <div class="prices">
+                          <a href="#" class="price">Rs. 40000</a>
+                        </div>
+                        <p class="deadline">Deadline: Oct 31, 2018</p>
+
+                        <div class="btn-wrapper btn-grd-primary">
+                          <div class="btn-primary-bg"></div>
+                          <a routerLink="#" class="btn btn-grd navbar-btn"> Apply Now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- mine jobs Modal closed -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-4">
               <div class="item-wrapper">
-                <a href="#" class="tile-container d-flex justify-content-center align-items-center">
+                <a href="#" class="tile-container d-flex justify-content-center align-items-center" data-toggle="modal"
+                  data-target="#exampleModalLong">
                   <div class="item-icon-wrapper">
                     <div class="item-icon">
                       <svg id="_001-computer">
@@ -617,7 +756,7 @@
               </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-4">
               <div class="item-wrapper">
                 <a href="#" class="tile-container d-flex justify-content-center align-items-center">
                   <div class="item-icon-wrapper">
@@ -775,7 +914,7 @@
               </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-4">
               <div class="item-wrapper">
                 <a href="#" class="tile-container d-flex justify-content-center align-items-center">
                   <div class="item-icon-wrapper">
@@ -788,7 +927,7 @@
                   </div>
                   <div class="tile-front d-flex justify-content-center align-items-center">
                     <span data-qa="name-1" class="tile-title vs-color-text text-center">
-                      Designing & Creativity
+                      Photography
                     </span>
                   </div>
 
@@ -849,12 +988,12 @@
                   requirement as employer, or bid to complete posted jobs as freelancer. It’s fast, simple, and
                   cost-effective solution to find and hire best talents anywhere, any time.
                 </p>
-                <div class="about-us-bg">
+                <!-- <div class="about-us-bg">
                   <svg>
                     <path id="base" d="M461.9-647.031c67.728,35.806-9.552,112.261-9.552,194.72s-.172,206.16-82.63,194.491S245.464-324.974,146.633-418.863,394.171-682.836,461.9-647.031Z"
                       transform="translate(721.905 449.709) rotate(-90)" fill="#f4f7fe" />
                   </svg>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -896,12 +1035,12 @@
           </div>
         </div>
       </div>
-      <div class="portal-bg">
+      <!-- <div class="portal-bg">
         <svg>
           <path id="base3" d="M470.672,446.573c77.557-41-10.938-128.553-10.938-222.977S459.537-12.482,365.113.881s-65.4,129.817-306.5,186.678S393.116,487.574,470.672,446.573Z"
             transform="translate(-0.001)" fill="#f4f7fe" fill-rule="evenodd" />
         </svg>
-      </div>
+      </div> -->
     </div>
   </section>
 
@@ -930,7 +1069,7 @@
                   <a class="nav-item nav-link nav-link-primary active" id="nav-freelancer-tab" data-toggle="tab" href="#nav-freelancer"
                     role="tab" aria-controls="nav-freelancer" aria-selected="true">for freelancer</a>
                   <a class="nav-item nav-link nav-link-secondary" id="nav-employer-tab" data-toggle="tab" href="#nav-employer"
-                    role="tab" aria-controls="nav-employer" aria-selected="false">for employer</a>
+                    role="tab" aria-controls="nav-employer" aria-selected="false">for Company</a>
                 </div>
               </nav>
             </div>
@@ -1360,7 +1499,7 @@
                   </div>
                 </div>
               </div>
-              <div class="how-works-bg">
+              <!-- <div class="how-works-bg">
                 <svg>
                   <path id="base2" d="M765.119-593.583c48.813,38.41-41.171,58.843-41.171,158.442s41.171,242.569-59.506,269.718S269.1-290.92,37.734-326.169,716.306-631.995,765.119-593.583Z"
                     transform="translate(829.63 -192.207) rotate(180)" fill="#f4f7fe" />
@@ -1372,7 +1511,7 @@
                     transform="translate(-10632.294 -1842.551)" fill="none" stroke="#ff6250" stroke-width="2"
                     stroke-dasharray="13" />
                 </svg>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>

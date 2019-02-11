@@ -1,3 +1,5 @@
+@import '../scss/mixin';
+
 // .boxed-container {
 //   max-width: 1440px;
 //   margin: 0 auto;
@@ -12,6 +14,39 @@
 //   min-height: 100vh;
 // }
 
-// .body-wrap.boxed-container {
-//   background: #f8f8f8;
-// }
+.body-wrap.boxed-container {
+  background: #fafafa;
+}
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  border-radius: 35px;
+  display: block;
+  @include transition();
+}
+
+#return-to-top i {
+  color: $white-color;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  @include transition();
+}
+
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
+}

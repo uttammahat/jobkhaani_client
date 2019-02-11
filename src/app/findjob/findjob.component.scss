@@ -549,7 +549,6 @@ section.find-jobs-page {
 }
 
 .job-list .body {
-  padding-left: 30px;
   width: calc(100% - 82px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -572,7 +571,7 @@ section.find-jobs-page {
 }
 
 .job-list:hover .body .content h4 a {
-  color: #246df8;
+  color: $text-primary;
 }
 
 .job-list .body .content .info span {
@@ -589,7 +588,7 @@ section.find-jobs-page {
 
 .job-list .body .content .project-description {
   font-size: 1.4rem;
-  height: 50px;
+  height: 70px;
   overflow: hidden;
   margin-bottom: 20px;
 }
@@ -699,6 +698,7 @@ section.find-jobs-page {
   overflow: hidden;
   display: inline-block;
   margin-top: 30px;
+  margin-bottom: 30px;
   box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.4);
   transition: all 0.4s ease;
 }
