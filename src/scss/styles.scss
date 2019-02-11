@@ -311,6 +311,10 @@ section {
   left: -100%;
 }
 
+.btn-wrapper:hover .btn-white-bg {
+  left: -100%;
+}
+
 .btn-grd {
   width: 100%;
   font-size: 1.4rem;
@@ -339,6 +343,14 @@ section {
   height: 100%;
   @include position-absolute(0, auto, auto, 0);
   @include primary-gradient-bg;
+  @include transition();
+}
+
+.btn-white-bg {
+  width: 300%;
+  height: 100%;
+  @include position-absolute(0, auto, auto, 0);
+  @include white-gradient-bg;
   @include transition();
 }
 

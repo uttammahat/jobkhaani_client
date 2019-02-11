@@ -201,3 +201,8 @@
   background: $secondary-color;
   background: linear-gradient(130deg, $light-secondary-color 0%, $secondary-color 50%, $light-secondary-color 100%);
 }
+
+@mixin white-gradient-bg {
+  background: $white-color;
+  background: linear-gradient(130deg, #f7f9fc 0%, $white-color 50%, #f7f9fc 100%);
+}
