@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FindjobComponent } from './findjob/findjob.component';
+import { CompleteProfileComponent } from './complete-profile/complete-profile.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FindjobComponent } from './findjob/findjob.component';
     FooterComponent,
     HowItWorksComponent,
     DashboardComponent,
-    FindjobComponent
+    FindjobComponent,
+    CompleteProfileComponent
   ],
   imports: [
     routes,

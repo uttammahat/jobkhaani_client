@@ -192,23 +192,23 @@ section.dashboard-page {
   white-space: nowrap;
 }
 
-.tab-link::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-width: 2px;
-  border-style: solid;
-  border-color: rgba(255, 255, 255, 0);
-  transition: border-color .25s ease;
-}
+// .tab-link::before {
+//   content: '';
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   border-width: 2px;
+//   border-style: solid;
+//   border-color: rgba(255, 255, 255, 0);
+//   transition: border-color .25s ease;
+// }
 
-.tab-link.active::before,
-.tab-link.is-active::before {
-  border-color: #00C7FA;
-}
+// .tab-link.active::before,
+// .tab-link.is-active::before {
+//   border-color: #00C7FA;
+// }
 
 .tab-link.active {
   width: 240px;
@@ -279,6 +279,11 @@ section.dashboard-page {
   font-size: 1.4rem;
   font-weight: 500;
 }
+
+/* tooltip start */
+
+
+/* tooltip closed */
 
 @media (min-width: 641px) {
   //   .section-inner {

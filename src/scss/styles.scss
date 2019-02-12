@@ -426,6 +426,45 @@ section {
   @include transition();
 }
 
+/* tab style */
+
+.nav-tabs {
+  margin-bottom: 30px;
+}
+
+.nav-tabs .nav-link.active {
+  opacity: 1;
+  background: rgba(255, 255, 255, 1);
+}
+
+.nav-tabs .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.nav-tabs .nav-link-primary {
+  color: $text-primary;
+}
+
+.nav-tabs .nav-link-secondary {
+  color: $text-secondary;
+}
+
+.nav-tabs .nav-link-primary.active {
+  border-bottom: 2px solid $primary-color;
+}
+
+.nav-tabs .nav-link-secondary.active {
+  border-bottom: 2px solid $secondary-color;
+}
+
+/* tab style */
 
 @media (max-width: 380px) {
   .container-btn {

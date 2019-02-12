@@ -8,6 +8,7 @@ import { SignupComponent } from './signup/signup.component';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FindjobComponent } from './findjob/findjob.component';
+import { CompleteProfileComponent } from './complete-profile/complete-profile.component';
 
 const router: Routes = [
 
@@ -16,7 +17,8 @@ const router: Routes = [
 	{ path: 'signup', component: SignupComponent },
 	{ path: 'how-it-works', component: HowItWorksComponent },
 	{ path: 'dashboard', component: DashboardComponent },
-	{ path: 'findjob', component: FindjobComponent }
+	{ path: 'findjob', component: FindjobComponent },
+	{ path: 'profile/complete', component: CompleteProfileComponent }
 
 ];
 
