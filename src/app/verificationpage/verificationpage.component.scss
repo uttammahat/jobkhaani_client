@@ -1,4 +1,4 @@
-@import '../../scss/styles.scss';
+@import '../../scss/mixin';
 
 button {
   outline: none !important;
@@ -104,13 +104,13 @@ textarea:-ms-input-placeholder {
   color: $input-placeholder-color;
 }
 
-.login-page {
+.verification-page {
   // background: $default-secondary-color;
   // background: linear-gradient(130deg, $dark-accent-color 0%, $text-dark 50%, $dark-accent-color 100%);
   overflow: hidden;
 }
 
-.loginwrapper {
+.verificationwrapper {
   position: relative;
   min-height: 100vh;
   width: 100%;
@@ -128,7 +128,7 @@ textarea:-ms-input-placeholder {
   margin: 0 auto;
 }
 
-.container-login {
+.container-verification {
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -139,7 +139,7 @@ textarea:-ms-input-placeholder {
   background: 0 0;
 }
 
-.wrap-login {
+.wrap-verification {
   width: 390px;
   background: $white-color;
   border-radius: 10px;
@@ -148,17 +148,51 @@ textarea:-ms-input-placeholder {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
 }
 
-.login-form {
+.verification-form {
   width: 100%;
 }
 
-.login-form-title {
+.verification-form-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.verification-form-title .header {
   display: block;
-  font-size: 3rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #333;
-  text-align: center;
+  margin-bottom: 10px;
   text-transform: capitalize;
+  @include display-flex;
+  @include flex-direction-row;
+  @include justify-content-center;
+  @include align-items-center;
+}
+
+.verification-form-title .header i {
+  margin-right: 10px;
+}
+
+.verification-form-title .brief-text {
+  font-size: 1.4rem;
+}
+
+.wrap-verification .text {
+  margin: 10px 0;
+}
+
+.wrap-verification .text span {
+  font-size: 1.4rem;
+}
+
+.wrap-verification .text span a {
+  color: $text-secondary;
+  @include transition();
+}
+
+.wrap-verification .text span a:hover {
+  color: $text-primary;
 }
 
 // .header {
@@ -167,13 +201,13 @@ textarea:-ms-input-placeholder {
 //   font-weight: 600;
 // }
 
-.login-logo-wrapper {
+.verification-logo-wrapper {
   width: 100%;
   height: 100%;
   margin-bottom: 30px;
 }
 
-.login-logo-wrapper img.logo {
+.verification-logo-wrapper img.logo {
   width: 100%;
   height: 100%;
 }
@@ -277,16 +311,19 @@ textarea:-ms-input-placeholder {
 }
 
 
-.container-login-form-btn {
+.container-verification-form-btn {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 13px;
-  margin: 0 auto;
+  margin: 10px auto;
+  flex-direction: row;
+  width: 100%;
 }
 
-.wrap-login-form-btn {
-  width: 100%;
+.wrap-verification-form-btn,
+.wrap-back-form-btn {
+  width: auto;
   display: block;
   position: relative;
   border-radius: 4px;
@@ -299,12 +336,14 @@ textarea:-ms-input-placeholder {
   @include transition();
 }
 
-.wrap-login-form-btn:hover {
+.wrap-verification-form-btn:hover,
+.wrap-back-form-btn:hover {
   @include transform(scale(1.05));
   @include box-shadow(0 3px 8px -4px rgba(0, 0, 0, 0.2));
 }
 
-.login-form-bgbtn {
+.verification-form-bgbtn,
+.back-form-bgbtn {
   position: absolute;
   top: 0;
   right: auto;
@@ -313,11 +352,19 @@ textarea:-ms-input-placeholder {
   z-index: -1;
   width: 300%;
   height: 100%;
-  @include primary-gradient-bg;
   transition: all 0.4s ease;
 }
 
-.login-form-btn {
+.verification-form-bgbtn {
+  @include primary-gradient-bg;
+}
+
+.back-form-bgbtn {
+  @include white-gradient-bg;
+}
+
+.verification-form-btn,
+.back-form-btn {
   position: relative;
   font-size: 1.4rem;
   color: $white-color;
@@ -332,78 +379,17 @@ textarea:-ms-input-placeholder {
   transition: all 0.4s ease;
 }
 
+.back-form-btn {
+  color: $text-dark;
+}
 
-.login-form-btn:focus,
-.wrap-login-form-btn:hover .login-form-btn {
+
+.verification-form-btn:focus,
+.wrap-verification-form-btn:hover .verification-form-btn {
   // color: $text-dark;
 }
 
-.wrap-login-form-btn:focus .login-form-bgbtn,
-.wrap-login-form-btn:hover .login-form-bgbtn {
+.wrap-verification-form-btn:focus .verification-form-bgbtn,
+.wrap-verification-form-btn:hover .verification-form-bgbtn {
   left: 0;
-}
-
-.signup-text {
-  font-size: 1.4rem;
-  color: $default-color;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.signup-text a {
-  font-size: 1.4rem;
-  color: $text-primary;
-}
-
-.signup-text a:hover {
-  color: $text-secondary;
-}
-
-.login-form-social {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.login-form-social .login-form-social-item {
-  padding: 20px;
-  margin: 10px;
-  border-radius: 50%;
-  height: 20px;
-  width: 20px;
-  color: $white-color;
-  @include display-flex;
-  @include flex-direction-row;
-  @include justify-content-center;
-  @include align-items-center;
-  @include align-content-center;
-  @include flex-wrap(wrap);
-  background: transparent;
-  @include transition();
-  @include box-shadow(0 8px 24px -4px rgba(44, 35, 35, 0.4));
-}
-
-.login-form-social .login-form-social-item:nth-child(1) {
-  background: #3b5999;
-}
-
-.login-form-social .login-form-social-item:nth-child(2) {
-  background: #dd4b39;
-}
-
-.login-form-social .login-form-social-item:hover {
-  background: $white-color;
-  @include transform(scale(1.06));
-  @include box-shadow(0 8px 24px -4px rgba(0, 0, 0, 0.2));
-}
-
-.login-form-social .login-form-social-item:nth-child(1):hover {
-  color: #3b5999;
-}
-
-.login-form-social .login-form-social-item:nth-child(2):hover {
-  color: #dd4b39;
 }

@@ -9,6 +9,9 @@ import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FindjobComponent } from './findjob/findjob.component';
 import { CompleteProfileComponent } from './complete-profile/complete-profile.component';
+import { ResetemailComponent } from './resetemail/resetemail.component';
+import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
+import { VerificationpageComponent } from './verificationpage/verificationpage.component';
 
 const router: Routes = [
 
@@ -18,7 +21,10 @@ const router: Routes = [
 	{ path: 'how-it-works', component: HowItWorksComponent },
 	{ path: 'dashboard', component: DashboardComponent },
 	{ path: 'findjob', component: FindjobComponent },
-	{ path: 'profile/complete', component: CompleteProfileComponent }
+	{ path: 'profile/complete', component: CompleteProfileComponent },
+	{ path: 'resetemail', component: ResetemailComponent },
+	{ path: 'resetpassword', component: ResetpasswordComponent },
+	{ path: 'verify', component: VerificationpageComponent }
 
 ];
 

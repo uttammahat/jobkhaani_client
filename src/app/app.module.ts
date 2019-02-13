@@ -12,6 +12,9 @@ import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FindjobComponent } from './findjob/findjob.component';
 import { CompleteProfileComponent } from './complete-profile/complete-profile.component';
+import { ResetemailComponent } from './resetemail/resetemail.component';
+import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
+import { VerificationpageComponent } from './verificationpage/verificationpage.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { CompleteProfileComponent } from './complete-profile/complete-profile.co
     HowItWorksComponent,
     DashboardComponent,
     FindjobComponent,
-    CompleteProfileComponent
+    CompleteProfileComponent,
+    ResetemailComponent,
+    ResetpasswordComponent,
+    VerificationpageComponent
   ],
   imports: [
     routes,

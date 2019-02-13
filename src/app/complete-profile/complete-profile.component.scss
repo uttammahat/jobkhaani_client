@@ -1,8 +1,17 @@
 @import '../../scss/mixin';
 
-
 section.complete-profile-page {
   overflow: hidden;
+}
+
+// .tab-content {
+//   padding: 20px;
+//   background: white;
+// }
+
+.features-tabs.section {
+  padding: 80px 0;
+  background: white;
 }
 
 .complete-profile {
@@ -72,7 +81,7 @@ section.complete-profile-page {
 .tab-link {
   position: relative;
   display: block;
-  padding: 24px;
+  padding: 12px 24px;
   text-decoration: none;
   background: rgba(255, 255, 255, 1);
   box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.4);
@@ -88,6 +97,8 @@ section.complete-profile-page {
 .tab-link.active {
   text-decoration: none;
   background: rgba(255, 255, 255, 1);
+  transform: scale(1.05);
+  box-shadow: 0 3px 8px -4px rgba(0, 0, 0, 0.2);
 }
 
 .tab-link i,
@@ -110,7 +121,26 @@ section.complete-profile-page {
   align-items: center;
   width: 100%;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 4px;
+}
+
+.tab-link.primary-tab {
+  background: rgba(66, 155, 214, 1);
+}
+
+.tab-link.primary-tab.active span,
+.tab-link.primary-tab.active i {
+  color: $text-dark;
+}
+
+.tab-link.primary-tab span,
+.tab-link.primary-tab i {
+  color: $white-color;
+}
+
+.tab-link.primary-tab:hover span,
+.tab-link.primary-tab:hover i {
+  color: $text-dark;
 }
 
 .tab-link.secondary-tab {
@@ -240,6 +270,23 @@ section.complete-profile-page {
   text-align: center;
   margin: 0 auto;
 }
+
+/* tab form */
+
+.complete-profile .tab-pane form {
+  width: 100%;
+}
+
+.inner-tabs {
+  margin-bottom: 20px;
+}
+
+.inner-content-wrapper {
+  margin-top: 20px;
+}
+
+/* tab form */
+
 
 // @media (min-width: 641px) {
 //   //   .section-inner {
